@@ -1,0 +1,127 @@
+:root {
+    --my-gap: 1rem;
+    --primary-color: #9792E4;
+    --secondary-color: #B5DDFE;
+    --third-color: #0084FC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: #0084FC;
+}
+
+section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 992px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-container {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.second-container img {
+    width: 100%;
+}
+
+
+
+
+.container-md {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.container-sm {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container-xs {
+    padding-left: 25%;
+    padding-right: 25%
+}
+
+.container-xxs {
+    padding-left: 30%;
+    padding-right: 30%
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--my-gap);
+    
+}
+
+.gap-3 {
+    --my-gap: 2rem;
+}
+
+.gap-2 {
+    --my-gap: 3rem;
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1rem;
+}
+
+.col-1-3 {
+    flex-basis: calc((100% / 3) - var(--my-gap));
+    background-color: var(--secondary-color);
+    height: 10rem;
+}
+
+.col-2-3 {
+    flex-basis: calc(((100% / 3) * 2) - var(--my-gap));
+    background-color: var(--secondary-color);
+    height: 20rem;
+}
+
+.col-1-2 {
+    flex-basis: calc(50% - var(--my-gap));
+    padding: 3rem;
+}
+
+.col-1-2-text {
+    padding: 3rem;
+    line-height: 2.5rem;
+}
+
+.col-img {
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+}
+
+.col-text {
+    padding: 3.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.col-icon {
+    background-color: #9792E4;
+    border-radius: 50%;
+}
