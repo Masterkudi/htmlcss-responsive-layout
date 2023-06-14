@@ -127,7 +127,7 @@ nav img {
 }
 .col-1-2 {
     flex-basis: calc(50% - var(--my-gap));
-    padding: 3rem;
+    padding: 4rem;
 }
 .col-1-2-text {
     padding: 3rem;
@@ -180,9 +180,8 @@ nav img {
 .tc-col {
     background-color: var(--first-color);
     width: 100%;
-    padding: 1rem;
-    border-top: 5rem;
-    border-bottom: 5rem;
+    padding: 2rem;
+    margin: 3rem 0rem;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -219,8 +218,7 @@ nav img {
     background-color: white;
     width: 100%;
     padding: 2rem;
-    border-top: 5rem;
-    border-bottom: 5rem;
+    margin: 3rem 0rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -239,6 +237,7 @@ nav img {
     line-height: 2rem;
 }
 .fc-col button {
+    padding: .7rem 4rem;
     margin-top: 3rem;
     background-color: var(--first-color);
     border: none;
@@ -246,8 +245,6 @@ nav img {
     font-size: 1.3rem;
     border-radius: 25px;
 }
-
-
 
 /* Quinto container */ 
 
