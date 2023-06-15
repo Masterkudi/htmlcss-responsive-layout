@@ -28,13 +28,13 @@ nav {
     color: #ffffff;
 }
 
-#hor-menu ul{
+#hor-menu ul {
     list-style: none;
     font-size: 1rem;
     display: none;
     
 }
-#ham-menu ul:hover {
+#ham-menu:hover ~ ul {
     display: list-item;
 }
 
@@ -49,8 +49,8 @@ nav {
 /* Primo container */
 
 .first-container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /* Spaziature */
@@ -138,13 +138,15 @@ nav {
 .second-container {
     background-color: var(--first-color);
     color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .second-container img {
     width: 100%;
 }
 .col-1-2 {
     flex-basis: calc(50% - var(--my-gap));
-    padding: 4rem;
+    padding: 3rem;
     
 }
 .col-1-2-text {
@@ -175,8 +177,8 @@ nav {
 /* Terzo container */
 
 .third-container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .third-container.row {
     background-color: var(--first-color);
@@ -197,13 +199,13 @@ nav {
 }
 .tc-text p {
     font-size: 1.4rem;
-    padding: 3rem;
+    padding-top: 2rem;
 }
 .tc-col {
     background-color: var(--first-color);
     width: 100%;
     padding: 2rem;
-    margin: 3rem 0rem;
+    margin-bottom: 3rem;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -211,7 +213,6 @@ nav {
 .tc-col img {
     align-self: center;
     width: 100%;
-    height: 100%;
     border-radius: 50%;
     padding: 2rem;
 }
@@ -220,18 +221,22 @@ nav {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: lighter;
-    padding: 3rem;
+    padding: 2rem;
+}
+.tc-col h3 {
+    color: #ffffff;
+    text-align: center;
 }
 
 /* Quarto container */
 
 .fourth-container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: var(--first-color);
 }
 .fc-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 3rem 0rem;
     text-align: center;
     color: white;
@@ -271,9 +276,7 @@ nav {
 /* Quinto container */ 
 
 .fifth-container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding: 3rem;
+    padding: 2rem 2rem 4rem 2rem;
     display: flex;
     position: relative;
     float: left;
@@ -282,6 +285,8 @@ nav {
     color: var(--first-color);
     line-height: 6rem;
     font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .ft-col p {
     line-height: 2rem;
@@ -291,10 +296,13 @@ nav {
     border-radius: 50%;
     margin-top: 2rem;
 }
-.icon {
+.ft-icon {
     font-size: 6rem;
     margin-top: 1rem;
     color: var(--first-color);
+    position: absolute;
+    margin-left: 11rem;
+    
 }
 .ft-col h3 {
     color: var(--first-color);
@@ -315,8 +323,8 @@ nav {
 /* Sesto container */
 
 .sixth-container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: var(--first-color);
     color: white;
     text-align: center;
@@ -363,8 +371,7 @@ nav {
 }
 
 .footer a {
-    color: #ffffff;
-    text-decoration: none;
+    color: var(--first-color)
 }
 
 
@@ -396,13 +403,17 @@ nav {
     .text-center {
         min-width: 480px;
     }
+    .tc-col {
+        flex-direction: row;
+    }
+    .second-container {
+        display: flex;
+    }
+
  }
 
 @media screen and (min-width: 1160px) {
 
-    .container {
-        width: 100%;
-    }
     .text-center {
         min-width: 1160px;
     }
